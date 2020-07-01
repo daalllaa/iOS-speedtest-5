@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="SzJ-75-vHJ">
             <objects>
-                <viewController id="a2x-8d-nIY" customClass="ViewController" customModule="learningIsFun" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="a2x-8d-nIY" customClass="ViewController" customModule="SpeedTest5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EiV-8C-WgD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,7 +25,9 @@
                                     <color key="titleColor" red="0.91434425119999996" green="0.24562284349999999" blue="0.21347567440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="red" destination="a2x-8d-nIY" eventType="touchUpInside" id="hea-ab-anN"/>
                                     <action selector="red:" destination="a2x-8d-nIY" eventType="touchUpInside" id="oIn-Eq-6Yr"/>
+                                    <action selector="redlabel:" destination="a2x-8d-nIY" eventType="touchUpInside" id="2Hf-Hu-Fpw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNt-ll-Ivo">
@@ -35,7 +37,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="BLUE"/>
                                 <connections>
-                                    <action selector="blue:" destination="a2x-8d-nIY" eventType="touchUpInside" id="Ons-b4-OeF"/>
+                                    <action selector="blue" destination="a2x-8d-nIY" eventType="touchUpInside" id="aY9-LM-rZQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5LA-i8-lAH">
@@ -47,6 +49,7 @@
                                     <color key="titleColor" red="0.1640625" green="1" blue="0.0068088107639999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="green" destination="a2x-8d-nIY" eventType="touchUpInside" id="kLz-50-ifw"/>
                                     <action selector="green:" destination="a2x-8d-nIY" eventType="touchUpInside" id="5Vj-1h-mwv"/>
                                 </connections>
                             </button>
@@ -59,7 +62,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.37865867077464788" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
+                                    <action selector="yellow" destination="a2x-8d-nIY" eventType="touchUpInside" id="NpN-EC-XID"/>
                                     <action selector="yellow:" destination="a2x-8d-nIY" eventType="touchUpInside" id="m09-mP-AzL"/>
+                                    <action selector="yellowlebel:" destination="a2x-8d-nIY" eventType="touchUpInside" id="52A-Nu-cGU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="قم بالضغط على الزر لتغيير لون الخلفية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neR-se-MHv">
@@ -74,12 +79,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ocZ-gA-U94"/>
                     </view>
-                    <connections>
-                        <outlet property="blueButton" destination="NNt-ll-Ivo" id="Lo5-mZ-Bo6"/>
-                        <outlet property="greenButton" destination="5LA-i8-lAH" id="UZx-KU-rBO"/>
-                        <outlet property="redButton" destination="oPu-Ej-SBd" id="yGI-o4-lpS"/>
-                        <outlet property="yellowButton" destination="Z4e-sV-B3g" id="D5x-0T-lJS"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="27k-gu-JDO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
